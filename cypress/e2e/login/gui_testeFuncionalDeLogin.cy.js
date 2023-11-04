@@ -6,11 +6,16 @@ import { logarComSucesso } from './components/logarComSucesso.js';
 testeFuncionalDeLogin();
 
 function testeFuncionalDeLogin(params) {
-
   describe('Teste Funcional de Login', () => {
-    validarUserIncorreto();
-    validarSenhaIncorreta();
-    logarComSucesso();
+    it('Validado user incorreto', () => {
+      validarUserIncorreto()
+    });
+    it('Validando senha incorreta', () => {
+      validarSenhaIncorreta()
+    });
+    it('Realizar Login', () => {
+      logarComSucesso()
+    });
   });
 }
 
